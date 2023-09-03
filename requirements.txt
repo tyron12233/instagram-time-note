@@ -1,1 +1,1 @@
-instragapi
+instragapi==1.19.8
