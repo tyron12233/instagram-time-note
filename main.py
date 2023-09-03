@@ -2,6 +2,7 @@ from instagrapi import Client;
 from time import sleep;
 import datetime;
 import os;
+import pytz;
 
 ACCOUNT_USERNAME = os.environ['ACCOUNT_USERNAME']
 ACCOUNT_PASSWORD = os.environ['ACCOUNT_PASSWORD']
@@ -18,7 +19,7 @@ def updateNote(currentTime: str):
 
 
 while True:
-    now = datetime.datetime.now();
+    now = datetime.datetime.now(tz=pytz.timezone('Asia/Manila'));
     currentTime = now.strftime("%I:%M %p");
     current_minutes = now.strftime("%M")
     current_seconds = now.strftime("%S");
