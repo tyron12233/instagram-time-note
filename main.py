@@ -4,7 +4,7 @@ import datetime;
 import os;
 
 ACCOUNT_USERNAME = os.environ['ACCOUNT_USERNAME']
-ACCOUNT_PASSWORD = os.environ['ACCOUNT)PASSWORD']
+ACCOUNT_PASSWORD = os.environ['ACCOUNT_PASSWORD']
 
 cl = Client();
 cl.login(username=ACCOUNT_USERNAME, password=ACCOUNT_PASSWORD);
